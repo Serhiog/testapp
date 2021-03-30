@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/testapp/static/css/main.45cde42e.chunk.css",
-    "main.js": "/testapp/static/js/main.ecc1dce4.chunk.js",
-    "main.js.map": "/testapp/static/js/main.ecc1dce4.chunk.js.map",
+    "main.css": "/testapp/static/css/main.ed26e3eb.chunk.css",
+    "main.js": "/testapp/static/js/main.353a5132.chunk.js",
+    "main.js.map": "/testapp/static/js/main.353a5132.chunk.js.map",
     "runtime-main.js": "/testapp/static/js/runtime-main.1d2c12ab.js",
     "runtime-main.js.map": "/testapp/static/js/runtime-main.1d2c12ab.js.map",
     "static/js/2.6fb02085.chunk.js": "/testapp/static/js/2.6fb02085.chunk.js",
     "static/js/2.6fb02085.chunk.js.map": "/testapp/static/js/2.6fb02085.chunk.js.map",
     "index.html": "/testapp/index.html",
-    "static/css/main.45cde42e.chunk.css.map": "/testapp/static/css/main.45cde42e.chunk.css.map",
+    "static/css/main.ed26e3eb.chunk.css.map": "/testapp/static/css/main.ed26e3eb.chunk.css.map",
     "static/js/2.6fb02085.chunk.js.LICENSE.txt": "/testapp/static/js/2.6fb02085.chunk.js.LICENSE.txt",
     "static/media/close.3636103b.png": "/testapp/static/media/close.3636103b.png",
     "static/media/style.css": "/testapp/static/media/video-back.afbe34f4.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.1d2c12ab.js",
     "static/js/2.6fb02085.chunk.js",
-    "static/css/main.45cde42e.chunk.css",
-    "static/js/main.ecc1dce4.chunk.js"
+    "static/css/main.ed26e3eb.chunk.css",
+    "static/js/main.353a5132.chunk.js"
   ]
 }
