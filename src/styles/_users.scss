@@ -1,0 +1,91 @@
+.users {
+    background       : url("img/users.png");
+    background-repeat: round;
+
+    @media (max-width: 435px) {
+        background: none;
+    }
+
+    &__inner {
+        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+        opacity         : 0.85;
+    }
+
+    &__wrapper {
+        max-width: 755px;
+        margin   : 0 auto;
+        padding  : 137px 40px 69px 40px;
+        height   : 520px;
+
+        @media (max-width: 551px) {
+            height: 730px;
+        }
+    }
+
+    &__text {
+        color         : #ffffff;
+        font-family   : "Playfair Display";
+        font-size     : 16px;
+        font-weight   : 400;
+        line-height   : 26px;
+        text-align    : center;
+        letter-spacing: 0.4px;
+        margin-bottom : 52px;
+        position      : relative;
+        height        : 145px;
+
+        @media (max-width: 551px) {
+            margin-bottom: 220px;
+        }
+
+        &::before {
+            content   : "";
+            background: url("img/breaks.png");
+            width     : 32px;
+            height    : 26px;
+            position  : absolute;
+            left      : 49%;
+            top       : -154%;
+        }
+    }
+
+    &__name {
+        color         : #ffffff;
+        font-family   : "Roboto";
+        font-size     : 14px;
+        font-weight   : 400;
+        line-height   : 22px;
+        text-align    : center;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        display       : block;
+    }
+
+    &__job {
+        color         : #ffffff;
+        font-family   : Roboto;
+        font-size     : 13px;
+        font-weight   : 300;
+        line-height   : 22px;
+        text-align    : center;
+        text-transform: uppercase;
+        display       : block;
+        margin-bottom : 45px
+    }
+
+    &__list {
+        @include flex;
+        justify-content: center;
+        flex-wrap      : wrap;
+
+        :nth-last-child(1) {
+            margin-right: 0;
+        }
+
+        &-item {
+            margin-right: 14px;
+        }
+
+        &-img {}
+    }
+}

@@ -1,0 +1,174 @@
+.expertise {
+
+    &__wrapper {
+        max-width: 1030px;
+        margin   : 0 auto;
+        padding  : 70px 40px;
+    }
+
+    &__title {
+        color         : #413d4b;
+        font-family   : "Playfair Display";
+        font-size     : 22px;
+        font-weight   : 700;
+        text-align    : center;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+        margin-bottom : 16px;
+    }
+
+    &__about {
+        color         : #2f2d35;
+        font-family   : "Playfair Display";
+        font-size     : 14px;
+        font-weight   : 400;
+        text-align    : center;
+        letter-spacing: 1.05px;
+        position      : relative;
+        margin-bottom : 70px;
+
+        &::after {
+            content         : "";
+            width           : 50px;
+            height          : 2px;
+            background-color: #c6c5c9;
+            position        : absolute;
+            left            : 47%;
+            top             : 247%;
+
+            @media (max-width: 771px) {
+                left: 45%;
+            }
+
+            @media (max-width: 424px) {
+                left: 42%;
+            }
+
+        }
+    }
+
+    &__list {
+        @include flex;
+        flex-wrap      : wrap;
+        justify-content: center;
+        align-items    : flex-start;
+    }
+
+    &__item {
+        max-width: 310px;
+        padding  : 112px 26px 39px 26px;
+
+        &--web {
+            border-bottom: 1px solid #ebebeb;
+            position     : relative;
+
+            &::before {
+                content   : "";
+                background: url("img/web.png") no-repeat;
+                width     : 49px;
+                height    : 50px;
+                position  : absolute;
+                left      : 42%;
+                top       : 11%;
+            }
+        }
+
+        &--brand {
+            border    : 1px solid #ebebeb;
+            border-top: none;
+            position  : relative;
+
+            &::before {
+                content   : "";
+                background: url("img/brand.png") no-repeat;
+                width     : 49px;
+                height    : 50px;
+                position  : absolute;
+                left      : 42%;
+                top       : 11%;
+            }
+        }
+
+        &--app {
+            border-bottom: 1px solid #ebebeb;
+            position     : relative;
+
+            &::before {
+                content   : "";
+                background: url("img/app.png") no-repeat;
+                width     : 49px;
+                height    : 50px;
+                position  : absolute;
+                left      : 42%;
+                top       : 11%;
+            }
+        }
+
+        &--search {
+            position: relative;
+
+            &::before {
+                content   : "";
+                background: url("img/search.png") no-repeat;
+                width     : 49px;
+                height    : 50px;
+                position  : absolute;
+                left      : 42%;
+                top       : 11%;
+            }
+        }
+
+        &--game {
+            border       : 1px solid #ebebeb;
+            border-bottom: none;
+            border-top   : none;
+            position     : relative;
+
+            &::before {
+                content   : "";
+                background: url("img/game.png") no-repeat;
+                width     : 49px;
+                height    : 50px;
+                position  : absolute;
+                left      : 42%;
+                top       : 11%;
+            }
+        }
+
+        &--love {
+            position: relative;
+
+            &::before {
+                content   : "";
+                background: url("img/love.png") no-repeat;
+                width     : 50px;
+                height    : 50px;
+                position  : absolute;
+                left      : 42%;
+                top       : 11%;
+            }
+        }
+    }
+
+    &__item-name {
+        color         : #413d4b;
+        font-family   : "Roboto";
+        font-size     : 14px;
+        font-weight   : 700;
+        text-align    : center;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        margin-bottom : 25px;
+        display       : block;
+    }
+
+    &__item-about {
+        color         : black;
+        font-family   : Roboto;
+        font-size     : 14px;
+        font-weight   : 300;
+        line-height   : 22px;
+        text-align    : center;
+        letter-spacing: 0.7px;
+    }
+}

@@ -1,0 +1,72 @@
+.popup {
+    position        : fixed;
+    width           : 100%;
+    height          : 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top             : 0;
+    left            : 0;
+    display         : block;
+
+    &__inner {
+        min-height     : 100%;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        padding        : 30px, 10px;
+    }
+
+    &__content {
+        background-color: #fff;
+        color           : black;
+        max-width       : 754px;
+        padding         : 60px;
+        position        : relative;
+    }
+
+    &__close {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size  : 40px;
+        line-height: 52px;
+        text-align : center;
+        color      : #2E2D35;
+    }
+
+    &__form {
+        font-weight: 350;
+        font-size  : 18px;
+        line-height: 24px;
+        color      : #474351;
+        margin-top : 35px;
+    }
+
+    &__email {
+        font-weight  : 350;
+        font-size    : 18px;
+        line-height  : 24px;
+        color        : #474351;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        background   : #FFFFFF;
+        border       : 1px solid #DDDAE7;
+        border-radius: 4px;
+        width        : 100%;
+        height       : 50px;
+        margin-bottom: 18px;
+        padding-left : 10px;
+    }
+
+    &__password {
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        width     : 370px;
+        margin-top: 15px;
+    }
+}

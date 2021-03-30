@@ -1,0 +1,114 @@
+.form {
+    padding       : 70px 40px;
+    padding-bottom: 0;
+
+    &__wrapper {
+        max-width: 545px;
+        margin   : 0 auto;
+        @include flex;
+        flex-direction : column;
+        justify-content: center;
+    }
+
+    &__title {
+        color         : #413d4b;
+        font-family   : "Playfair Display";
+        font-size     : 22px;
+        font-weight   : 700;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+        margin-bottom : 35px;
+    }
+
+    &__common {
+        max-width     : 460px;
+        height        : 10px;
+        color         : #413d4b;
+        font-family   : Roboto;
+        font-size     : 14px;
+        font-weight   : 300;
+        letter-spacing: 0.7px;
+        @include flex;
+        flex-wrap: wrap;
+    }
+
+    &__name {
+        width        : 100%;
+        border       : 1px solid #e5e5e5;
+        padding      : 18px 20px 17px 20px;
+        margin-bottom: 21px;
+
+        &::placeholder {
+            opacity       : 0.5;
+            color         : #413d4b;
+            font-family   : Roboto;
+            font-size     : 14px;
+            font-weight   : 300;
+            letter-spacing: 0.7px;
+        }
+    }
+
+    &__email {
+        width        : 100%;
+        border       : 1px solid #e5e5e5;
+        padding      : 18px 20px 17px 20px;
+        margin-bottom: 21px;
+
+        &::placeholder {
+            opacity       : 0.5;
+            color         : #413d4b;
+            font-family   : Roboto;
+            font-size     : 14px;
+            font-weight   : 300;
+            letter-spacing: 0.7px;
+        }
+    }
+
+    &__subject {
+        width        : 100%;
+        border       : 1px solid #e5e5e5;
+        padding      : 18px 20px 17px 20px;
+        margin-bottom: 21px;
+
+        &::placeholder {
+            opacity       : 0.5;
+            color         : #413d4b;
+            font-family   : Roboto;
+            font-size     : 14px;
+            font-weight   : 300;
+            letter-spacing: 0.7px;
+        }
+    }
+
+    &__message {
+        width        : 100%;
+        border       : 1px solid #e5e5e5;
+        padding      : 18px 20px 17px 20px;
+        margin-bottom: 21px;
+
+        &::placeholder {
+            opacity       : 0.5;
+            color         : #413d4b;
+            font-family   : Roboto;
+            font-size     : 14px;
+            font-weight   : 300;
+            letter-spacing: 0.7px;
+        }
+    }
+
+    &__btn {
+        color         : #00e0d0;
+        font-family   : 'Hammersmith One', sans-serif;
+        font-size     : 16px;
+        font-weight   : 400;
+        text-align    : center;
+        text-transform: uppercase;
+        background    : none;
+        padding       : 15px;
+        border        : 1px solid #00e0d0;
+        border-radius : 3px;
+        margin        : 0 auto;
+        display       : block;
+        margin-bottom : 100px;
+    }
+}

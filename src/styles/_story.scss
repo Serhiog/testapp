@@ -1,0 +1,60 @@
+.story {
+    &-wrapper {
+        max-width: 890px;
+        margin   : 0 auto;
+        @include flex;
+        flex-wrap: wrap;
+        padding  : 70px 40px 70px 40px;
+
+        @media (max-width: 852px) {
+            justify-content: center;
+        }
+    }
+
+    &-logo {
+        @media (max-width: 852px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-img {}
+
+    &-wrapper-text {
+        max-width: 538px;
+    }
+
+    &-title {
+        color         : #413d4b;
+        font-family   : "Playfair Display";
+        font-size     : 22px;
+        font-weight   : 700;
+        text-align    : left;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+        margin-bottom : 28px;
+    }
+
+    &-text {
+        color         : black;
+        font-family   : Roboto;
+        font-size     : 14px;
+        font-weight   : 300;
+        line-height   : 22px;
+        letter-spacing: 0.42px;
+        margin-bottom : 31px;
+    }
+
+    &-btn {
+        color         : #00e0d0;
+        font-family   : "Hammersmith One";
+        font-size     : 16px;
+        font-weight   : 400;
+        text-transform: uppercase;
+        background    : none;
+        width         : 120px;
+        height        : 40px;
+        border        : solid 1px #00e0d0;
+        ;
+    }
+
+}

@@ -1,0 +1,334 @@
+.footer {
+    background       : url("./img/footer-back.png");
+    background-repeat: round;
+
+    @media (max-width: 818px) {
+        background: none;
+    }
+
+    &__inner {
+        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+        opacity         : 0.85;
+    }
+
+    &__wrapper {
+        max-width: 1020px;
+        margin   : 0 auto;
+        @include flex;
+        flex-wrap: wrap;
+        padding  : 90px 40px 69px 40px
+    }
+
+    &__logo-inner {
+        max-width: 283px;
+
+    }
+
+    &__logo-title {
+        @include m0p0;
+        color                  : #ffffff;
+        background-image       : linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%);
+        background-size        : 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip   : text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color   : transparent;
+        font-family            : "Roboto";
+        font-size              : 30px;
+        font-weight            : 100;
+        margin-left            : 55px;
+        position               : relative;
+        margin-bottom          : 37px;
+        margin-left            : 54px;
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-logo.png");
+            width     : 44px;
+            height    : 50px;
+            position  : absolute;
+            left      : -54px;
+            top       : -9px;
+        }
+
+
+
+
+    }
+
+    &__logo-about {
+        color         : #ffffff;
+        font-family   : Roboto;
+        font-size     : 14px;
+        font-weight   : 300;
+        line-height   : 26px;
+        letter-spacing: 0.35px;
+    }
+
+    &__adress-inner {
+        max-width: 278px;
+    }
+
+    &__adress-logo {
+        color         : #ffffff;
+        font-family   : "Roboto";
+        font-size     : 15px;
+        font-weight   : 400;
+        line-height   : 26px;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        margin-bottom : 37px;
+        display       : inline-block;
+
+        @media (max-width: 640px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__adress-point {
+        color         : #ffffff;
+        font-family   : Roboto;
+        font-size     : 14px;
+        font-weight   : 300;
+        line-height   : 26px;
+        letter-spacing: 0.35px;
+        margin-left   : 30px;
+        position      : relative;
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-point.png");
+            width     : 14px;
+            height    : 19px;
+            position  : absolute;
+            left      : -28px;
+            top       : 3px;
+            position  : absolute;
+        }
+    }
+
+    &__adress-tel {
+        color         : #ffffff;
+        font-family   : Roboto;
+        font-size     : 14px;
+        font-weight   : 300;
+        line-height   : 26px;
+        letter-spacing: 0.35px;
+        margin-left   : 30px;
+        position      : relative;
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-tel.png");
+            width     : 17px;
+            height    : 17px;
+            position  : absolute;
+            left      : -28px;
+            top       : -1px;
+        }
+    }
+
+    &__touch-inner {
+        max-width: 300px;
+    }
+
+    &__touch-title {
+        color         : #ffffff;
+        font-family   : "Roboto";
+        font-size     : 15px;
+        font-weight   : 400;
+        line-height   : 26px;
+        text-transform: uppercase;
+        display       : inline-block;
+        margin-bottom : 37px;
+
+        @media (max-width: 640px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__touch-input-wrapper {
+        @include flex;
+        margin-bottom: 27px;
+        flex-wrap    : wrap;
+    }
+
+    &__touch-input {
+        background: none;
+        padding   : 16px;
+        border    : 1px solid #726a8c;
+
+        &::placeholder {
+            opacity       : 0.75;
+            color         : #ffffff;
+            font-family   : Roboto;
+            font-size     : 14px;
+            font-weight   : 300;
+            line-height   : 26px;
+            letter-spacing: 0.7px;
+        }
+    }
+
+    &__touch-btn {
+        width           : 70px;
+        height          : 50px;
+        border          : 1px solid #ffffff;
+        background-color: #ffffff;
+        opacity         : 0.5;
+        margin-left     : 10px;
+        position        : relative;
+
+        @media (max-width: 381px) {
+            margin-left: 0;
+            margin-top : 10px;
+        }
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-tel-btn.png");
+            width     : 25px;
+            height    : 25px;
+            position  : absolute;
+            left      : 20px;
+            top       : 11px;
+
+        }
+    }
+
+    &__touch-list {
+        @include flex;
+        flex-wrap: wrap;
+    }
+
+    &__touch-item {
+        width        : 35px;
+        height       : 35px;
+        border       : 1px solid #ffffff;
+        border-radius: 50%;
+
+    }
+
+    &__touch-item-fb-link {
+        position: relative;
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-fb.png") no-repeat;
+            width     : 25px;
+            height    : 25px;
+            position  : absolute;
+            left      : 14px;
+            top       : 9px;
+
+        }
+    }
+
+    &__touch-item-tw-link {
+        position: relative;
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-tw.png") no-repeat;
+            width     : 25px;
+            height    : 25px;
+            position  : absolute;
+            left      : 12px;
+            top       : 11px;
+
+        }
+    }
+
+    &__touch-item-ball-link {
+        position: relative;
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-ball.png") no-repeat;
+            width     : 25px;
+            height    : 25px;
+            position  : absolute;
+            left      : 10px;
+            top       : 9px;
+
+        }
+    }
+
+    &__touch-item-inst-link {
+        position: relative;
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-ins.png") no-repeat;
+            width     : 25px;
+            height    : 25px;
+            position  : absolute;
+            left      : 10px;
+            top       : 9px;
+
+        }
+    }
+
+    &__touch-item-google-link {
+        position: relative;
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-google.png") no-repeat;
+            width     : 25px;
+            height    : 25px;
+            position  : absolute;
+            left      : 11px;
+            top       : 10px;
+
+        }
+    }
+
+    &__touch-item-youtube-link {
+        position: relative;
+
+        &::before {
+            content   : "";
+            background: url("./img/footer-youtube.png") no-repeat;
+            width     : 25px;
+            height    : 25px;
+            position  : absolute;
+            left      : 9px;
+            top       : 11px;
+
+        }
+    }
+
+    &__terms-inner {
+        @include flex;
+        flex-wrap : wrap;
+        flex-grow : 1;
+        margin-top: 70px;
+    }
+
+    &__terms-list {
+        color         : #ffffff;
+        font-family   : Roboto;
+        font-size     : 14px;
+        font-weight   : 400;
+        line-height   : 26px;
+        text-transform: uppercase;
+        letter-spacing: 0.35px;
+        @include flex;
+        flex-wrap: wrap;
+    }
+
+    &__terms-item {
+        margin-right: 30px;
+    }
+
+    &__terms-link {}
+
+    &__terms-copy {
+        color         : #ffffff;
+        font-family   : Roboto;
+        font-size     : 14px;
+        font-weight   : 400;
+        line-height   : 26px;
+        letter-spacing: 0.35px;
+    }
+}
